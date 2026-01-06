@@ -38,38 +38,38 @@
 
     <div id="widthRow" class="row">
         <div class="label">Width preset:</div>
-        <div class="buttons">
-            <button class="sizeBtn" data-size="short" type="button">Short</button>
-            <button class="sizeBtn active" data-size="medium" type="button">Medium</button>
-            <button class="sizeBtn" data-size="long" type="button">Long</button>
-        </div>
+          <div class="buttons">
+              <button class="sizeBtn" data-size="short" type="button">Short</button>
+              <button class="sizeBtn active" data-size="medium" type="button">Medium</button>
+              <button class="sizeBtn" data-size="long" type="button">Long</button>
+          </div>
     </div>
 
     <div id="advancedMeasures" class="row" style="display:none;">
       <div class="label">Measures:</div>
-      <div class="buttons">
-        <input id="bars" type="number" min="1" max="16" step="1" value="4" />
-        <span class="hint">1–16 bars</span>
-      </div>
+        <div class="buttons">
+          <input id="bars" type="number" min="1" max="16" step="1" value="4" />
+          <span class="hint">1–16 bars</span>
+        </div>
     </div>
 
     <div class="row">
       <div class="label">Tuning:</div>
-      <div class="buttons">
-        <select id="tuning">
-          <option value="standard" selected>Standard (E A D G B e)</option>
-          <option value="dropd">Drop D (D A D G B e)</option>
-          <option value="halfdown">Half-step down (Eb Ab Db Gb Bb eb)</option>
-          <option value="custom">Custom…</option>
-        </select>
-
-        <div id="customTuningWrap" class="inline" style="display:none;">
-          <span class="hint">Custom:</span>
-          <input id="customTuning" type="text" value="E A D G B e" placeholder="E A D G B e" />
+        <div class="buttons">
+          <select id="tuning">
+            <option value="standard" selected>Standard (E A D G B e)</option>
+            <option value="dropd">Drop D (D A D G B e)</option>
+            <option value="halfdown">Half-step down (Eb Ab Db Gb Bb eb)</option>
+            <option value="custom">Custom…</option>
+          </select>
+  
+          <div id="customTuningWrap" class="inline" style="display:none;">
+            <span class="hint">Custom:</span>
+            <input id="customTuning" type="text" value="E A D G B e" placeholder="E A D G B e" />
+          </div>
+  
+          <span id="tuningWarn" class="warn"></span>
         </div>
-
-        <span id="tuningWarn" class="warn"></span>
-      </div>
     </div>
 
     <div class="row">
@@ -99,7 +99,6 @@
   <section class="panel">
     <h2>Live Preview</h2>
     <textarea id="preview" readonly></textarea>
-    <p class="muted">Tip: Clipboard works best on GitHub Pages (HTTPS) or localhost. Some browser previews block it.</p>
   </section>
 </body>
 </html>
